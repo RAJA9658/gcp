@@ -2,9 +2,8 @@ provider "google" {
   credentials = file("credential.json")
   project = "gold-subset-366105"
   region  = "asia-south1 (Mumbai)"
- 
-
 }
+
 resource "google_compute_instance" "vm_instance" {
   name         = "terraform-instance"
   machine_type = "e2-micro"
