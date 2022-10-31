@@ -21,7 +21,7 @@ resource "google_compute_firewall" "default" {
   }
 
 
-  source_tags = ["web and ssh"]
+  source_tags = ["web-anda-ssh"]
   
 }
 //for_vpc_network
