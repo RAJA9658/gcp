@@ -1,8 +1,3 @@
-provider "google" {
-  credentials = file("credential.json")
-  project = "gold-subset-366105"
-  region  = "asia-south1 (Mumbai)"
-}
 resource "google_sql_database" "database" {
   name     = "my-database"
   instance = google_sql_database_instance.instance.name
