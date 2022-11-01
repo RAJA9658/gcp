@@ -3,6 +3,7 @@ resource "google_compute_firewall" "default" {
   network = google_compute_network.default.name
   source_ranges = ["0.0.0.0/0"]
   priority      = 65534
+ // enable_logging = "true"
  log_config {
    metadata = "INCLUDE_ALL_METADATA"
  }
@@ -21,7 +22,7 @@ resource "google_compute_firewall" "default" {
   }
 
 
-  source_tags = ["web and ssh"]
+  source_tags = ["web"]
   
 }
 //for_vpc_network

@@ -1,0 +1,8 @@
+resource "google_compute_project_metadata" "my_ssh_key" {
+  metadata = {
+    ssh-keys = <<EOF
+      rajat:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCwXPx/BN3bIrTHf1YhoYkCQwIoQ2l7m+3NPTHltfp/yKE1gd/U07StYX0U/MwMKpQqHl4WEwrRUjT2NFeMvQm0EJZNRoVwl3QhK6D6BZkfIY20lyCrvGMPUEKZqknvdXSYEB1MDgAEou8jYTzb3+isLzqHnJ0cb3WEKmqAwp4n6Nw4fnUHJVZvljJ0oxuhOYVzrgQHhJr92HX1U9QUgQlvq2mZk8QscbwJRwxutulzalG1D2PslaBrnENlXhyde9YRQzhS3k7BDOgsFgyx230V1SoW4ftbqdnXnA0M1qhyP5SHbqlvHVOWAV661/1FebwI2Ut1GnBA9BSeIGeUescxKq36a+A0SBzHeRL7qRglMRGloxAlxl/2IATKRinFiGTsCX9EYPYEonFLwtAqSfCdNV2KNP4ccY1XOLqu9X/01In3rFViv9wzb0v4busbNGllZ72dX72Qf/eHWkPIjE44/H4tDxO20vKfsq0CosJpgSghpy040ASke5G23Ozj33M= Riaxe-imprintNext-VM@LAPTOP-NT984HH4
+      
+    EOF
+}
+}

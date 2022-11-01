@@ -4,8 +4,7 @@
       sudo apt install -y apache2
      sudo apt install docker.io -y
       sudo apt install mysql-client -y
-  sudo usermod -a -G docker rajat
+  sudo usermod -a -G docker ubuntu
   docker pull wordpress
   docker run --name somewordpress -p 8080:80 -d wordpress
   docker start somewordpress
-  

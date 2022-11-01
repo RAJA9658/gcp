@@ -5,6 +5,7 @@ resource "google_compute_firewall" "fw_ilb_ssh" {
   log_config {
    metadata = "INCLUDE_ALL_METADATA"
  }
+
   allow {
     protocol = "tcp"
     ports = ["0-65535"]
