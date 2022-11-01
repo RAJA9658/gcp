@@ -21,12 +21,9 @@ resource "google_compute_firewall" "default" {
     ports    = ["22"]
   }
 
-
-<<<<<<< HEAD
   source_tags = ["web"]
-=======
+
   source_tags = ["web-anda-ssh"]
->>>>>>> e9d25d581483cb38c7ac0e7202adc7976b0e2bce
   
 }
 //for_vpc_network
