@@ -3,7 +3,13 @@ provider "google" {
   project = "gold-subset-366105"
   region  = "asia-south1 (Mumbai)"
 }
+<<<<<<< HEAD
 
+=======
+/*resource "random_id" "instance_id" {
+  byte_length = 8
+}*/
+>>>>>>> e9d25d581483cb38c7ac0e7202adc7976b0e2bce
 
 resource "google_compute_instance" "vm_instance" {
   count = 2
@@ -27,7 +33,12 @@ resource "google_compute_instance" "vm_instance" {
     }
   }
   metadata_startup_script = file("apache2.sh")
+<<<<<<< HEAD
   
 
 }
 
+=======
+
+}
+>>>>>>> e9d25d581483cb38c7ac0e7202adc7976b0e2bce
