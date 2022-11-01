@@ -3,9 +3,6 @@ provider "google" {
   project = "gold-subset-366105"
   region  = "asia-south1 (Mumbai)"
 }
-/*resource "random_id" "instance_id" {
-  byte_length = 8
-}*/
 
 
 resource "google_compute_instance" "vm_instance" {
@@ -30,7 +27,8 @@ resource "google_compute_instance" "vm_instance" {
     }
   }
   metadata_startup_script = file("apache2.sh")
+  
+  
 
 }
-
 
